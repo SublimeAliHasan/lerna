@@ -1,0 +1,11 @@
+{
+    "name": "sublime-ui-packages",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Sublime UI packages repository",
+    "license": "MIT",
+    "dependencies": {
+        "lerna": "^3.0.1",
+        "s3-publish": "^1.0.9"
+    }
+}

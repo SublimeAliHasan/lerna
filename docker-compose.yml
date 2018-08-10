@@ -1,0 +1,7 @@
+version: '3'
+services:
+    sublime-ui-packages:
+        build: .
+        volumes:
+           - ./sublime-ui-packages/:/sublime-ui-packages/
+           - ~/.aws:/root/.aws
