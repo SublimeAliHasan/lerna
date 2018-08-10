@@ -17,5 +17,5 @@ pkg-build:
 	docker-compose run --rm sublime-ui-packages make build package=$(package)
 
 pkg-publish:
-	docker-compose run --rm sublime-ui-packages make version
+	cd sublime-ui-packages && make version
 	docker-compose run --rm sublime-ui-packages make publish

@@ -1,6 +1,10 @@
 #!/bin/bash
 mkdir package
 cp -R lib index.js package.json package
-tar -cvzf $1.tgz package
-mv $1.tgz ../../libs/
+version=`npm view ./ version`
+echo $1
+fileName="$1@$version.tgz"
+fileName= echo $fileName
+tar -cvzf "$fileName" package
+mv "$fileName" ../../libs/
 rm -R package

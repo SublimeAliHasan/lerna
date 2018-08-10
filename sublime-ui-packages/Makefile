@@ -1,10 +1,10 @@
 build:
-	node_modules/lerna/cli.js bootstrap --scope=$(package)
-	node_modules/lerna/cli.js exec --scope=$(package) npm start
-	node_modules/lerna/cli.js exec --scope=$(package) sh make.sh $(package)
+	npx lerna bootstrap --scope=$(package)
+	npx lerna exec --scope=$(package) npm start
+	npx lerna exec --scope=$(package) sh make.sh $(package)
 
 version:
-	sh make.sh
+	npx lerna version --skip-npm --push -m "update(ui-packages): update to %s"
 
 publish:
-	node_modules/s3-publish/cli.js sync
+	npx s3p sync
