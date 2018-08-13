@@ -1,5 +1,5 @@
 {
-  "name": "sublime-ui-select-field-test",
+  "name": "sublime-ui-select-field",
   "version": "1.0.0",
   "description": "form select field",
   "main": "index.js",
