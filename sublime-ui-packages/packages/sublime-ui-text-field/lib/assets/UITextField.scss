@@ -1,0 +1,61 @@
+@import 'theme/colors';
+@import 'theme/fonts';
+
+.UITextField {
+    &_input {
+        width: 100%;
+        outline: none;
+        border: 1px solid $paleGrey;
+        border-radius: 0.125rem;
+        font-size: 0.875rem;
+        height: 3rem;
+        padding-left: 1rem;
+        font-weight: 400;
+        font-family: $mainTypeface;
+        color: $charcoalGrey;
+        box-shadow: none;
+
+        &::placeholder {
+            color: $coolGrey;
+            font-weight: 400;
+        }
+
+        &--error {
+            border-bottom: 2px solid $errorColor;
+        }
+    }
+
+    &_inputContainer {
+        display: flex;
+        position: relative;
+    }
+
+    &_icon {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+    &_inputGroupTitle {
+        font-weight: 600;
+        margin: 0 0 0.6875rem;
+        font-size: 0.9375rem;
+    }
+
+    &_label {
+        display: flex;
+        flex-flow: column;
+        flex: 1;
+
+        &--noFlexGrow {
+            flex: 0;
+        }
+    }
+
+    &_errorMessage {
+        margin: 0.5rem 0;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: $errorColor;
+    }
+}

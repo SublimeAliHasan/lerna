@@ -1,2 +1,2 @@
-import UISelectField from './lib/UISelectField.js';
-export default UISelectField;
+import UITextField from './lib/UITextField.js';
+export default UITextField;

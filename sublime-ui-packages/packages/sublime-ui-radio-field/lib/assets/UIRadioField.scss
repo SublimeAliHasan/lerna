@@ -1,0 +1,32 @@
+@import 'theme/colors';
+@import 'theme/fonts';
+
+.UIRadioField {
+    margin-right: 1.5rem;
+    flex: 0;
+    font-family: $mainTypeface;
+    &_Input {
+        margin-left: 1.5rem;
+        display: none;
+        &:checked + .UIRadioField_Label {
+            border: 1px solid $dustyOrange;
+            color: $dustyOrange;
+        }
+    }
+    &_Label {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        font-size: 0.875rem;
+        height: 3rem;
+        padding: 0 1rem;
+        border: 1px solid $paleGrey;
+        border-radius: 0.125rem;
+        white-space: nowrap;
+        align-items: center;
+        cursor: pointer;
+        transition: 300ms color ease-in-out,
+            300ms border-color ease-in-out;
+    }
+}

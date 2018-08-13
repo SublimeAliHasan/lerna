@@ -1,2 +1,2 @@
-import UISelectField from './lib/UISelectField.js';
-export default UISelectField;
+import UIRadioField from './lib/UIRadioField.js';
+export default UIRadioField;

@@ -1,2 +1,2 @@
-import UISelectField from './lib/UISelectField.js';
-export default UISelectField;
+import UISubmitButton from './lib/UISubmitButton.js';
+export default UISubmitButton;
