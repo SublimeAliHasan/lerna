@@ -1,6 +1,6 @@
 {
   "name": "sublime-ui-select-field-test",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "form select field",
   "main": "index.js",
   "license": "MIT",
