@@ -4,7 +4,7 @@ build:
 	npx lerna exec --scope=$(package) sh make.sh $(package)
 
 version:
-	npx lerna version --skip-npm --push -m "update(ui-packages): update to %s"
+	npx lerna version --skip-git --skip-npm --push -m "update(ui-packages): update to %s"
 
 publish:
 	npx s3p sync

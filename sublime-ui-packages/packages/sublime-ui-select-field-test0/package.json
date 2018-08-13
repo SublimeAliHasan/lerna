@@ -1,12 +1,11 @@
 {
   "name": "sublime-ui-select-field-test0",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "babel src --watch --out-dir lib & babel src --out-dir lib --copy-files",
-    "version": "echo $npm_package_version"
+    "start": "babel src --watch --out-dir lib & babel src --out-dir lib --copy-files"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",

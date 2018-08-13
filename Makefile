@@ -14,8 +14,8 @@ clean:
 	docker-compose down -v --remove-orphans
 
 pkg-build:
+	cd sublime-ui-packages && make version
 	docker-compose run --rm sublime-ui-packages make build package=$(package)
 
 pkg-publish:
-	cd sublime-ui-packages && make version
 	docker-compose run --rm sublime-ui-packages make publish
