@@ -14,7 +14,7 @@ const UISelectField = ({
 }) => (
     <label className={cx('UISelectField')} htmlFor={name}>
         <p className={cx('UISelectField_Label')}>{fieldLabel}</p>
-        <select className={cx('UISelectField_Input')} name={name} onBlur={onGlobalChange}>
+        <select className={cx('UISelectsField_Input')} name={name} onBlur={onGlobalChange}>
             <option value="0">{placeholder}</option>
             {
                 data.map(({value, label}) => (

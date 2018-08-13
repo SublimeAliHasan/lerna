@@ -21,7 +21,7 @@ const UISelectField = ({
     ),
     React.createElement(
         'select',
-        { className: cx('UISelectField_Input'), name: name, onBlur: onGlobalChange },
+        { className: cx('UISelectsField_Input'), name: name, onBlur: onGlobalChange },
         React.createElement(
             'option',
             { value: '0' },
