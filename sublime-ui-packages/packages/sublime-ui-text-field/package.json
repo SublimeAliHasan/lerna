@@ -1,0 +1,19 @@
+{
+  "name": "sublime-ui-text-field",
+  "version": "1.0.0",
+  "description": "form text field",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel src --watch --out-dir lib & babel src --out-dir lib --copy-files"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-watch": "^2.0.7"
+  }
+}
